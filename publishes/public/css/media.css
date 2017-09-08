@@ -1,0 +1,102 @@
+.media-list {
+    display: flex;
+    margin: 0;
+    flex-wrap: wrap;
+    padding: 10px;
+    position: relative;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.media-list .item {
+    min-width: 250px;
+    max-width: 250px;
+    padding: 10px;
+    margin: 10px;
+    cursor: pointer;
+    border-radius: 3px;
+    border: 1px solid #ecf0f1;
+    overflow: hidden;
+    background: #f6f8f9;
+    display: flex;
+}
+
+.media-drop-zone {
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size:1.2em;
+    background: #f6f8f9;
+}
+
+.queue-item {
+    overflow: hidden;
+}
+
+.queue-item .queue-item-name {
+    display: inline-block;
+    max-width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.media-list .item.selected {
+    background: #357ca5 !important;
+    color: white;
+    box-shadow: 0 0 8px rgba(0,0,0,0.5);
+}
+
+.media-list .item .icon i {
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+    top: 5px;
+}
+
+.media-list .item .icon i:before {
+    font-size: 40px;
+}
+
+.media-list .item .icon {
+    flex: 1;
+    text-align: center;
+    padding-left: 0;
+    margin-left: 0;
+    margin-right: 5px;
+}
+
+.media-list .details {
+    flex: 2;
+    overflow: hidden;
+    width: 100%;
+}
+
+.media-list .details h4 {
+    margin-bottom: 2px;
+    margin-top: 10px;
+    max-height: 17px;
+    height: 17px;
+    overflow: hidden;
+    font-size: 14px;
+    text-overflow: ellipsis;
+    font-weight: 700;
+    text-shadow: rgba(0, 0, 0, .15) 0 0 1px;
+}
+
+.media-list .details span {
+    font-size: 11px;
+    position: relative;
+    top: -3px;
+}
+
+.media-list__inline-response {
+    margin-right: 10px;
+}
+
+.file-over {
+    border:3px dashed red!important;
+}

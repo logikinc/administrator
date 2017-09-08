@@ -1,0 +1,19 @@
+stages:
+  - build
+  - test
+  - deploy
+
+build:
+  stage: build
+  script:
+   - composer install
+  
+phpunit:
+  stage: test
+  script:
+    - ./vendor/bin/phpunit tests
+
+complete:
+  stage: deploy
+  script:
+    - curl -XGET https://adminarchitect.com/webhooks/build.succeeded

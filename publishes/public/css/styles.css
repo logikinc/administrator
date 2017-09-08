@@ -1,0 +1,21 @@
+.selectize-input {
+    height: 34px;
+}
+
+/* fix editable selectize row height */
+td > .selectize-control.multi,
+td > .selectize-control.single {
+    height: 39px;
+}
+
+/* fix selectize filter height */
+.form-group > .selectize-control.multi,
+.form-group > .selectize-control.single {
+    height: 34px;
+}
+
+.selectize-input.focus   {
+    height: auto;
+    z-index: 10;
+    position: absolute;
+}

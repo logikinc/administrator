@@ -1,0 +1,7 @@
+before_script:
+  - yum update && yum install -y composer
+  - composer install --dev
+
+phpunit:
+  script:
+    - ./vendor/bin/phpunit tests
